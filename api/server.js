@@ -1,13 +1,14 @@
 const express = require('express');
 
-const carsRouter = require('./carsRouter');
-
 const server = express();
  
 
+const carsRouter = require('./Vehicles/carsRouter');
+
+
 server.use(express.json()); 
 
-server.use('/cars', carsRouter); 
+server.use("/api/Vehicles" , carsRouter); 
 
 
 
